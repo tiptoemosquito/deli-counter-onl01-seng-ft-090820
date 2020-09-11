@@ -8,6 +8,3 @@ def line(counter)
     puts current_line
   end
 end
-
-
-
