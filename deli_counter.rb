@@ -13,8 +13,8 @@ def line(counter)
   if counter.empty?
     puts "Welcome, #{person}. You are number one in line."
   else current_line = "The line is currently:"
-    count.each.with_index(2) do |person, b|
-      current_line.push "#{b}. #{person}"
+    count.each.with_index(1) do |person, a|
+      current_line.push "#{a}. #{person}"
     end
     puts current_line
   end
