@@ -1,28 +1,23 @@
 def deli_counter
-line(katz_deli)
 
-  katz_deli = []
+katz_deli = []
+customers = ["0", "1", "2"]
+take_a_number(katz_deli, "Ada") [0]#=> Welcome, Ada. You are number 1 in line.
+take_a_number(katz_deli, "Grace") [1]#=> Welcome, Grace. You are number 2 in line.
+take_a_number(katz_deli, "Kent") [2]#=> Welcome, Kent. You are number 3 in line.
 
-  take_a_number(katz_deli, "Ada")
-  take_a_number(katz_deli, "Grace")
-  take_a_number(katz_deli, "Kent")
+line(katz_deli) [0, 1, 2]#=> "The line is currently: 1. Ada 2. Grace 3. Kent"
 
-line(katz_deli)
+now_serving(katz_deli) [0]#=> "Currently serving Ada."
 
-now_serving(katz_deli)
+line(katz_deli) [1,2]#=> "The line is currently: 1. Grace 2. Kent"
 
-line(katz_deli)
+take_a_number(katz_deli, "Matz")[ 2]#=> Welcome, Matz. You are number 3 in line.
 
-take_a_number(katz_deli, "Matz")
+line(katz_deli)[0, 1, 2 ]#=> "The line is currently: 1. Grace 2. Kent 3. Matz"
 
-line(katz_deli)
+now_serving(katz_deli) [0]#=> "Currently serving Grace."
 
-now_serving(katz_deli)
-
-line(katz_deli)
-
-
-
+line(katz_deli)[1, 2] #=> "The line is currently: 1. Kent 2. Matz"
 
 end
-  # Write your code here.
