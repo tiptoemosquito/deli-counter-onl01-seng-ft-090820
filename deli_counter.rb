@@ -17,7 +17,7 @@ end
 def now_serving(counter)
   if counter.empty?
     puts "There is nobody waiting to be served."
-  else 
+  else
     puts "Currently serving #{counter.first}."
     counter.shift
   end
